@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32929.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "InvoiceETL", "InvoiceETL\InvoiceETL.dtproj", "{5088D196-40A8-41DD-BF49-B8D1815D4970}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5088D196-40A8-41DD-BF49-B8D1815D4970}.Development|Default.ActiveCfg = Development
+		{5088D196-40A8-41DD-BF49-B8D1815D4970}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {984992C4-EE0B-4F18-9374-FC45E0D452F7}
+	EndGlobalSection
+EndGlobal
