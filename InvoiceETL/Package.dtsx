@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{93D9A65B-438E-40BA-8847-0AD7653575C2}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{7D708A57-1438-4CA3-9F0F-44A8558DECD6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -420,6 +420,166 @@ FROM InvHist h INNER JOIN
                       refId="Package\Data Flow Task\dimAccount.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Data Flow Task\dimAccount.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\dimDate"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="dimDate"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."dimDate"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\dimDate.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[POL-MAS-02\SAGE20.Invoices_DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[POL-MAS-02\SAGE20.Invoices_DW]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].Columns[invoice_date]"
+                      cachedDataType="dbDate"
+                      cachedName="invoice_date"
+                      externalMetadataColumnId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].ExternalColumns[invoice_date]"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[invoice_date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].Columns[year]"
+                      cachedDataType="i4"
+                      cachedName="year"
+                      externalMetadataColumnId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].ExternalColumns[year]"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[year]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].Columns[month_number]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="month_number"
+                      externalMetadataColumnId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].ExternalColumns[month_number]"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[month_number]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].Columns[year_month_number]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="year_month_number"
+                      externalMetadataColumnId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].ExternalColumns[year_month_number]"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[year_month_number]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].Columns[year_month_short]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="year_month_short"
+                      externalMetadataColumnId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].ExternalColumns[year_month_short]"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[year_month_short]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].Columns[month_name_short]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="month_name_short"
+                      externalMetadataColumnId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].ExternalColumns[month_name_short]"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[month_name_short]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].Columns[month_name_long]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="month_name_long"
+                      externalMetadataColumnId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].ExternalColumns[month_name_long]"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[month_name_long]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].ExternalColumns[invoice_date]"
+                      dataType="dbTimeStamp"
+                      name="invoice_date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].ExternalColumns[year]"
+                      dataType="i2"
+                      name="year" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].ExternalColumns[month_number]"
+                      dataType="wstr"
+                      length="2"
+                      name="month_number" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].ExternalColumns[year_month_number]"
+                      dataType="wstr"
+                      length="7"
+                      name="year_month_number" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].ExternalColumns[year_month_short]"
+                      dataType="wstr"
+                      length="8"
+                      name="year_month_short" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].ExternalColumns[month_name_short]"
+                      dataType="wstr"
+                      length="3"
+                      name="month_name_short" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input].ExternalColumns[month_name_long]"
+                      dataType="wstr"
+                      length="9"
+                      name="month_name_long" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\dimDate.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\dimDate.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\dimDate.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\dimDate.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\dimDate.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -871,6 +1031,225 @@ FROM InvHist h INNER JOIN
                       refId="Package\Data Flow Task\FactInvoices.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Data Flow Task\FactInvoices.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Generate Dates"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="Generate Dates"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">EXEC  [dbo].[GenerateData]</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Generate Dates.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[POL-MAS-02\SAGE20.Invoices_DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[POL-MAS-02\SAGE20.Invoices_DW]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[invoice_date]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].ExternalColumns[invoice_date]"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[invoice_date]"
+                      name="invoice_date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[year]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].ExternalColumns[year]"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[year]"
+                      name="year"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[month_number]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].ExternalColumns[month_number]"
+                      length="4000"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[month_number]"
+                      name="month_number"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[year_month_number]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].ExternalColumns[year_month_number]"
+                      length="4000"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[year_month_number]"
+                      name="year_month_number"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[year_month_short]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].ExternalColumns[year_month_short]"
+                      length="4000"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[year_month_short]"
+                      name="year_month_short"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[month_name_short]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].ExternalColumns[month_name_short]"
+                      length="4000"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[month_name_short]"
+                      name="month_name_short"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[month_name_long]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].ExternalColumns[month_name_long]"
+                      length="4000"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].Columns[month_name_long]"
+                      name="month_name_long"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].ExternalColumns[invoice_date]"
+                      dataType="dbDate"
+                      name="invoice_date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].ExternalColumns[year]"
+                      dataType="i4"
+                      name="year" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].ExternalColumns[month_number]"
+                      dataType="wstr"
+                      length="4000"
+                      name="month_number" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].ExternalColumns[year_month_number]"
+                      dataType="wstr"
+                      length="4000"
+                      name="year_month_number" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].ExternalColumns[year_month_short]"
+                      dataType="wstr"
+                      length="4000"
+                      name="year_month_short" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].ExternalColumns[month_name_short]"
+                      dataType="wstr"
+                      length="4000"
+                      name="month_name_short" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output].ExternalColumns[month_name_long]"
+                      dataType="wstr"
+                      length="4000"
+                      name="month_name_long" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Error Output].Columns[invoice_date]"
+                      dataType="dbDate"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Error Output].Columns[invoice_date]"
+                      name="invoice_date" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Error Output].Columns[year]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Error Output].Columns[year]"
+                      name="year" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Error Output].Columns[month_number]"
+                      dataType="wstr"
+                      length="4000"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Error Output].Columns[month_number]"
+                      name="month_number" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Error Output].Columns[year_month_number]"
+                      dataType="wstr"
+                      length="4000"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Error Output].Columns[year_month_number]"
+                      name="year_month_number" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Error Output].Columns[year_month_short]"
+                      dataType="wstr"
+                      length="4000"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Error Output].Columns[year_month_short]"
+                      name="year_month_short" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Error Output].Columns[month_name_short]"
+                      dataType="wstr"
+                      length="4000"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Error Output].Columns[month_name_short]"
+                      name="month_name_short" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Error Output].Columns[month_name_long]"
+                      dataType="wstr"
+                      length="4000"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Error Output].Columns[month_name_long]"
+                      name="month_name_long" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1614,6 +1993,11 @@ FROM InvHist h INNER JOIN
               endId="Package\Data Flow Task\FactInvoices.Inputs[ADO NET Destination Input]"
               name="ADO NET Source Output"
               startId="Package\Data Flow Task\Invoices Source.Outputs[ADO NET Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[ADO NET Source Output3]"
+              endId="Package\Data Flow Task\dimDate.Inputs[ADO NET Destination Input]"
+              name="ADO NET Source Output"
+              startId="Package\Data Flow Task\Generate Dates.Outputs[ADO NET Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1757,6 +2141,48 @@ FROM InvHist h INNER JOIN
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="120,42"
+          Id="Package\Data Flow Task\dimDate"
+          TopLeft="968,365" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Data Flow Task\Generate Dates"
+          TopLeft="914,200" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[ADO NET Source Output3]"
+          TopLeft="992.5,242">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="35.5,123"
+              Start="0,0"
+              End="35.5,115.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,57.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,57.5"
+                    Point2="0,61.5"
+                    Point3="4,61.5" />
+                  <mssgle:LineSegment
+                    End="31.5,61.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="31.5,61.5"
+                    Point2="35.5,61.5"
+                    Point3="35.5,65.5" />
+                  <mssgle:LineSegment
+                    End="35.5,115.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -1802,6 +2228,22 @@ FROM InvHist h INNER JOIN
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\FactInvoices">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\dimDate">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Generate Dates">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
