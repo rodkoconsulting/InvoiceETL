@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="57"
-  DTS:VersionGUID="{31DA28E0-7351-4D53-8DD4-1077D75D2457}">
+  DTS:VersionBuild="59"
+  DTS:VersionGUID="{EF3AC8F7-651F-4506-9FB3-2A69563C2E92}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -4635,21 +4635,21 @@ ORDER BY ItemCode, AcctR, InvR</property>
                       refId="Package\Invoice Details Data Flow Task\Conditional Split.Inputs[Conditional Split Input].Columns[item_quantity]"
                       cachedDataType="numeric"
                       cachedName="item_quantity"
-                      cachedPrecision="15"
-                      cachedScale="6"
+                      cachedPrecision="9"
+                      cachedScale="5"
                       lineageId="Package\Invoice Details Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[item_quantity]" />
                     <inputColumn
                       refId="Package\Invoice Details Data Flow Task\Conditional Split.Inputs[Conditional Split Input].Columns[item_price]"
                       cachedDataType="numeric"
                       cachedName="item_price"
-                      cachedPrecision="15"
-                      cachedScale="6"
+                      cachedPrecision="7"
+                      cachedScale="2"
                       lineageId="Package\Invoice Details Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[item_price]" />
                     <inputColumn
                       refId="Package\Invoice Details Data Flow Task\Conditional Split.Inputs[Conditional Split Input].Columns[item_total]"
                       cachedDataType="numeric"
                       cachedName="item_total"
-                      cachedPrecision="11"
+                      cachedPrecision="7"
                       cachedScale="2"
                       lineageId="Package\Invoice Details Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[item_total]" />
                   </inputColumns>
@@ -5080,19 +5080,19 @@ ORDER BY ItemCode, AcctR, InvR</property>
                       refId="Package\Invoice Details Data Flow Task\Invoice Details Destination.Inputs[OLE DB Destination Input].ExternalColumns[item_quantity]"
                       dataType="numeric"
                       name="item_quantity"
-                      precision="15"
-                      scale="6" />
+                      precision="9"
+                      scale="5" />
                     <externalMetadataColumn
                       refId="Package\Invoice Details Data Flow Task\Invoice Details Destination.Inputs[OLE DB Destination Input].ExternalColumns[item_price]"
                       dataType="numeric"
                       name="item_price"
-                      precision="15"
-                      scale="6" />
+                      precision="7"
+                      scale="2" />
                     <externalMetadataColumn
                       refId="Package\Invoice Details Data Flow Task\Invoice Details Destination.Inputs[OLE DB Destination Input].ExternalColumns[item_total]"
                       dataType="numeric"
                       name="item_total"
-                      precision="11"
+                      precision="7"
                       scale="2" />
                   </externalMetadataColumns>
                 </input>
@@ -5246,8 +5246,8 @@ ORDER BY ItemCode, AcctR, InvR</property>
                       externalMetadataColumnId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Output].ExternalColumns[item_quantity]"
                       lineageId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Output].Columns[item_quantity]"
                       name="item_quantity"
-                      precision="15"
-                      scale="6"
+                      precision="9"
+                      scale="5"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Output].Columns[item_price]"
@@ -5257,8 +5257,8 @@ ORDER BY ItemCode, AcctR, InvR</property>
                       externalMetadataColumnId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Output].ExternalColumns[item_price]"
                       lineageId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Output].Columns[item_price]"
                       name="item_price"
-                      precision="15"
-                      scale="6"
+                      precision="7"
+                      scale="2"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Output].Columns[item_total]"
@@ -5268,7 +5268,7 @@ ORDER BY ItemCode, AcctR, InvR</property>
                       externalMetadataColumnId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Output].ExternalColumns[item_total]"
                       lineageId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Output].Columns[item_total]"
                       name="item_total"
-                      precision="11"
+                      precision="7"
                       scale="2"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
@@ -5304,19 +5304,19 @@ ORDER BY ItemCode, AcctR, InvR</property>
                       refId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Output].ExternalColumns[item_quantity]"
                       dataType="numeric"
                       name="item_quantity"
-                      precision="15"
-                      scale="6" />
+                      precision="9"
+                      scale="5" />
                     <externalMetadataColumn
                       refId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Output].ExternalColumns[item_price]"
                       dataType="numeric"
                       name="item_price"
-                      precision="15"
-                      scale="6" />
+                      precision="7"
+                      scale="2" />
                     <externalMetadataColumn
                       refId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Output].ExternalColumns[item_total]"
                       dataType="numeric"
                       name="item_total"
-                      precision="11"
+                      precision="7"
                       scale="2" />
                   </externalMetadataColumns>
                 </output>
@@ -5361,21 +5361,21 @@ ORDER BY ItemCode, AcctR, InvR</property>
                       dataType="numeric"
                       lineageId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Error Output].Columns[item_quantity]"
                       name="item_quantity"
-                      precision="15"
-                      scale="6" />
+                      precision="9"
+                      scale="5" />
                     <outputColumn
                       refId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Error Output].Columns[item_price]"
                       dataType="numeric"
                       lineageId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Error Output].Columns[item_price]"
                       name="item_price"
-                      precision="15"
-                      scale="6" />
+                      precision="7"
+                      scale="2" />
                     <outputColumn
                       refId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Error Output].Columns[item_total]"
                       dataType="numeric"
                       lineageId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Error Output].Columns[item_total]"
                       name="item_total"
-                      precision="11"
+                      precision="7"
                       scale="2" />
                     <outputColumn
                       refId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
@@ -5437,9 +5437,9 @@ SELECT
 	, CAST(h.DetailSeqNo AS INT) AS DetailSeqNo
 	, CASE WHEN h.ItemType = '1' THEN '' ELSE h.ItemCodeDesc END AS 'Desc'
 	, h.ItemCode
-	, CONVERT(DECIMAL(9,4),(ROUND(QuantityShipped,4))) AS Qty
-	, CONVERT(DECIMAL(9,2),(ROUND(UnitPrice,2))) AS Pri
-	, CONVERT(DECIMAL(9,2),(ROUND(ExtensionAmt,2))) AS Tot
+	, CONVERT(DECIMAL(9,5),(ROUND(QuantityShipped,5))) AS Qty
+	, CONVERT(DECIMAL(7,2),(ROUND(UnitPrice,2))) AS Pri
+	, CONVERT(DECIMAL(7,2),(ROUND(ExtensionAmt,2))) AS Tot
 FROM InvHist h
 ORDER BY InvoiceNo, CAST(h.HeaderSeqNo AS INT), CAST(h.DetailSeqNo AS INT)</property>
                 <property
@@ -5599,18 +5599,18 @@ ORDER BY InvoiceNo, CAST(h.HeaderSeqNo AS INT), CAST(h.DetailSeqNo AS INT)</prop
                       dataType="numeric"
                       name="Qty"
                       precision="9"
-                      scale="4" />
+                      scale="5" />
                     <externalMetadataColumn
                       refId="Package\Invoice Details Data Flow Task\Invoice Details View Source.Outputs[OLE DB Source Output].ExternalColumns[Pri]"
                       dataType="numeric"
                       name="Pri"
-                      precision="9"
+                      precision="7"
                       scale="2" />
                     <externalMetadataColumn
                       refId="Package\Invoice Details Data Flow Task\Invoice Details View Source.Outputs[OLE DB Source Output].ExternalColumns[Tot]"
                       dataType="numeric"
                       name="Tot"
-                      precision="9"
+                      precision="7"
                       scale="2" />
                   </externalMetadataColumns>
                 </output>
@@ -5656,20 +5656,20 @@ ORDER BY InvoiceNo, CAST(h.HeaderSeqNo AS INT), CAST(h.DetailSeqNo AS INT)</prop
                       lineageId="Package\Invoice Details Data Flow Task\Invoice Details View Source.Outputs[OLE DB Source Error Output].Columns[Qty]"
                       name="Qty"
                       precision="9"
-                      scale="4" />
+                      scale="5" />
                     <outputColumn
                       refId="Package\Invoice Details Data Flow Task\Invoice Details View Source.Outputs[OLE DB Source Error Output].Columns[Pri]"
                       dataType="numeric"
                       lineageId="Package\Invoice Details Data Flow Task\Invoice Details View Source.Outputs[OLE DB Source Error Output].Columns[Pri]"
                       name="Pri"
-                      precision="9"
+                      precision="7"
                       scale="2" />
                     <outputColumn
                       refId="Package\Invoice Details Data Flow Task\Invoice Details View Source.Outputs[OLE DB Source Error Output].Columns[Tot]"
                       dataType="numeric"
                       lineageId="Package\Invoice Details Data Flow Task\Invoice Details View Source.Outputs[OLE DB Source Error Output].Columns[Tot]"
                       name="Tot"
-                      precision="9"
+                      precision="7"
                       scale="2" />
                     <outputColumn
                       refId="Package\Invoice Details Data Flow Task\Invoice Details View Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
@@ -5821,21 +5821,21 @@ ORDER BY InvoiceNo, CAST(h.HeaderSeqNo AS INT), CAST(h.DetailSeqNo AS INT)</prop
                       refId="Package\Invoice Details Data Flow Task\Merge Join.Inputs[Merge Join Right Input].Columns[item_quantity]"
                       cachedDataType="numeric"
                       cachedName="item_quantity"
-                      cachedPrecision="15"
-                      cachedScale="6"
+                      cachedPrecision="9"
+                      cachedScale="5"
                       lineageId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Output].Columns[item_quantity]" />
                     <inputColumn
                       refId="Package\Invoice Details Data Flow Task\Merge Join.Inputs[Merge Join Right Input].Columns[item_price]"
                       cachedDataType="numeric"
                       cachedName="item_price"
-                      cachedPrecision="15"
-                      cachedScale="6"
+                      cachedPrecision="7"
+                      cachedScale="2"
                       lineageId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Output].Columns[item_price]" />
                     <inputColumn
                       refId="Package\Invoice Details Data Flow Task\Merge Join.Inputs[Merge Join Right Input].Columns[item_total]"
                       cachedDataType="numeric"
                       cachedName="item_total"
-                      cachedPrecision="11"
+                      cachedPrecision="7"
                       cachedScale="2"
                       lineageId="Package\Invoice Details Data Flow Task\Invoice Details Table Source.Outputs[OLE DB Source Output].Columns[item_total]" />
                   </inputColumns>
@@ -6043,8 +6043,8 @@ ORDER BY InvoiceNo, CAST(h.HeaderSeqNo AS INT), CAST(h.DetailSeqNo AS INT)</prop
                       dataType="numeric"
                       lineageId="Package\Invoice Details Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[item_quantity]"
                       name="item_quantity"
-                      precision="15"
-                      scale="6">
+                      precision="9"
+                      scale="5">
                       <properties>
                         <property
                           containsID="true"
@@ -6058,8 +6058,8 @@ ORDER BY InvoiceNo, CAST(h.HeaderSeqNo AS INT), CAST(h.DetailSeqNo AS INT)</prop
                       dataType="numeric"
                       lineageId="Package\Invoice Details Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[item_price]"
                       name="item_price"
-                      precision="15"
-                      scale="6">
+                      precision="7"
+                      scale="2">
                       <properties>
                         <property
                           containsID="true"
@@ -6073,7 +6073,7 @@ ORDER BY InvoiceNo, CAST(h.HeaderSeqNo AS INT), CAST(h.DetailSeqNo AS INT)</prop
                       dataType="numeric"
                       lineageId="Package\Invoice Details Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[item_total]"
                       name="item_total"
-                      precision="11"
+                      precision="7"
                       scale="2">
                       <properties>
                         <property
@@ -6221,8 +6221,8 @@ ORDER BY InvoiceNo, CAST(h.HeaderSeqNo AS INT), CAST(h.DetailSeqNo AS INT)</prop
                       refId="Package\Invoice Details Data Flow Task\Update Command.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
                       dataType="numeric"
                       name="Param_2"
-                      precision="15"
-                      scale="6">
+                      precision="9"
+                      scale="5">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -6234,8 +6234,8 @@ ORDER BY InvoiceNo, CAST(h.HeaderSeqNo AS INT), CAST(h.DetailSeqNo AS INT)</prop
                       refId="Package\Invoice Details Data Flow Task\Update Command.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
                       dataType="numeric"
                       name="Param_3"
-                      precision="15"
-                      scale="6">
+                      precision="7"
+                      scale="2">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -6247,7 +6247,7 @@ ORDER BY InvoiceNo, CAST(h.HeaderSeqNo AS INT), CAST(h.DetailSeqNo AS INT)</prop
                       refId="Package\Invoice Details Data Flow Task\Update Command.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
                       dataType="numeric"
                       name="Param_4"
-                      precision="11"
+                      precision="7"
                       scale="2">
                       <properties>
                         <property
@@ -8372,10 +8372,6 @@ ORDER BY h.InvoiceNo, CAST(HeaderSeqNo AS Int)</property>
           Id="Package\Account Data Flow Task"
           TopLeft="458,75" />
         <NodeLayout
-          Size="238,42"
-          Id="Package\Invoice Headers Data Flow Task"
-          TopLeft="434,169" />
-        <NodeLayout
           Size="203,42"
           Id="Package\Inventory Data Flow Task"
           TopLeft="469,365" />
@@ -8383,6 +8379,10 @@ ORDER BY h.InvoiceNo, CAST(HeaderSeqNo AS Int)</property>
           Size="230,42"
           Id="Package\Invoice Details Data Flow Task"
           TopLeft="452,249" />
+        <NodeLayout
+          Size="238,42"
+          Id="Package\Invoice Headers Data Flow Task"
+          TopLeft="434,169" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -8391,6 +8391,22 @@ ORDER BY h.InvoiceNo, CAST(HeaderSeqNo AS Int)</property>
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="187,42"
+          Id="Package\Account Data Flow Task\Account Table Source"
+          TopLeft="527,73" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Account Data Flow Task\Update Command"
+          TopLeft="565,513" />
+        <NodeLayout
+          Size="177,48"
+          Id="Package\Account Data Flow Task\Account Destination"
+          TopLeft="245,501" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Account Data Flow Task\Merge Join"
+          TopLeft="421,235" />
         <NodeLayout
           Size="159,42"
           Id="Package\Account Data Flow Task\Conditional Split"
@@ -8403,18 +8419,6 @@ ORDER BY h.InvoiceNo, CAST(HeaderSeqNo AS Int)</property>
           Size="183,42"
           Id="Package\Account Data Flow Task\Account View Source"
           TopLeft="219,78" />
-        <NodeLayout
-          Size="168,42"
-          Id="Package\Account Data Flow Task\Update Command"
-          TopLeft="565,513" />
-        <NodeLayout
-          Size="187,42"
-          Id="Package\Account Data Flow Task\Account Table Source"
-          TopLeft="527,73" />
-        <NodeLayout
-          Size="177,48"
-          Id="Package\Account Data Flow Task\Account Destination"
-          TopLeft="245,501" />
         <EdgeLayout
           Id="Package\Account Data Flow Task.Paths[UPDATE]"
           TopLeft="493.666666666667,447">
@@ -8448,6 +8452,114 @@ ORDER BY h.InvoiceNo, CAST(HeaderSeqNo AS Int)</property>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="59.0047721354165,31.7945205479452,37.3237890625,9.421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Account Data Flow Task.Paths[OLE DB Source Output1]"
+          TopLeft="620.5,115">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-112.166666666667,120"
+              Start="0,0"
+              End="-112.166666666667,112.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,67.1441307578009" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,67.1441307578009"
+                    Point2="0,71.1441307578009"
+                    Point3="-4,71.1441307578009" />
+                  <mssgle:LineSegment
+                    End="-108.166666666667,71.1441307578009" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-108.166666666667,71.1441307578009"
+                    Point2="-112.166666666667,71.1441307578009"
+                    Point3="-112.166666666667,75.1441307578009" />
+                  <mssgle:LineSegment
+                    End="-112.166666666667,112.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Account Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="310.5,120">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="156.166666666667,115"
+              Start="0,0"
+              End="156.166666666667,107.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.1797919762258" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,64.1797919762258"
+                    Point2="0,68.1797919762258"
+                    Point3="4,68.1797919762258" />
+                  <mssgle:LineSegment
+                    End="152.166666666667,68.1797919762258" />
+                  <mssgle:CubicBezierSegment
+                    Point1="152.166666666667,68.1797919762258"
+                    Point2="156.166666666667,68.1797919762258"
+                    Point3="156.166666666667,72.1797919762258" />
+                  <mssgle:LineSegment
+                    End="156.166666666667,107.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Account Data Flow Task.Paths[Merge Join Output]"
+          TopLeft="487.5,277">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-19,128"
+              Start="0,0"
+              End="-19,120.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,60" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,60"
+                    Point2="0,64"
+                    Point3="-4,64" />
+                  <mssgle:LineSegment
+                    End="-15,64" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-15,64"
+                    Point2="-19,64"
+                    Point3="-19,68" />
+                  <mssgle:LineSegment
+                    End="-19,120.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -8511,123 +8623,9 @@ ORDER BY h.InvoiceNo, CAST(HeaderSeqNo AS Int)</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="133,42"
-          Id="Package\Account Data Flow Task\Merge Join"
-          TopLeft="421,235" />
-        <EdgeLayout
-          Id="Package\Account Data Flow Task.Paths[OLE DB Source Output]"
-          TopLeft="310.5,120">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="156.166666666667,115"
-              Start="0,0"
-              End="156.166666666667,107.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,64.1797919762258" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,64.1797919762258"
-                    Point2="0,68.1797919762258"
-                    Point3="4,68.1797919762258" />
-                  <mssgle:LineSegment
-                    End="152.166666666667,68.1797919762258" />
-                  <mssgle:CubicBezierSegment
-                    Point1="152.166666666667,68.1797919762258"
-                    Point2="156.166666666667,68.1797919762258"
-                    Point3="156.166666666667,72.1797919762258" />
-                  <mssgle:LineSegment
-                    End="156.166666666667,107.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Account Data Flow Task.Paths[OLE DB Source Output1]"
-          TopLeft="620.5,115">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-112.166666666667,120"
-              Start="0,0"
-              End="-112.166666666667,112.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,67.1441307578009" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,67.1441307578009"
-                    Point2="0,71.1441307578009"
-                    Point3="-4,71.1441307578009" />
-                  <mssgle:LineSegment
-                    End="-108.166666666667,71.1441307578009" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-108.166666666667,71.1441307578009"
-                    Point2="-112.166666666667,71.1441307578009"
-                    Point3="-112.166666666667,75.1441307578009" />
-                  <mssgle:LineSegment
-                    End="-112.166666666667,112.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Account Data Flow Task.Paths[Merge Join Output]"
-          TopLeft="487.5,277">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-19,128"
-              Start="0,0"
-              End="-19,120.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,60" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,60"
-                    Point2="0,64"
-                    Point3="-4,64" />
-                  <mssgle:LineSegment
-                    End="-15,64" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-15,64"
-                    Point2="-19,64"
-                    Point3="-19,68" />
-                  <mssgle:LineSegment
-                    End="-19,120.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Account Data Flow Task\Account View Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Account Data Flow Task\Account Table Source">
     <Properties>
@@ -8654,267 +8652,8 @@ ORDER BY h.InvoiceNo, CAST(HeaderSeqNo AS Int)</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Invoice Headers Data Flow Task">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="227,42"
-          Id="Package\Invoice Headers Data Flow Task\Invoice Headers Table Source"
-          TopLeft="412,57" />
-        <NodeLayout
-          Size="223,42"
-          Id="Package\Invoice Headers Data Flow Task\Invoice Headers View Source"
-          TopLeft="84,55" />
-        <NodeLayout
-          Size="133,42"
-          Id="Package\Invoice Headers Data Flow Task\Merge Join"
-          TopLeft="364,167" />
-        <EdgeLayout
-          Id="Package\Invoice Headers Data Flow Task.Paths[OLE DB Source Output]"
-          TopLeft="195.5,97">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="235,70"
-              Start="0,0"
-              End="235,62.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31"
-                    Point2="0,35"
-                    Point3="4,35" />
-                  <mssgle:LineSegment
-                    End="231,35" />
-                  <mssgle:CubicBezierSegment
-                    Point1="231,35"
-                    Point2="235,35"
-                    Point3="235,39" />
-                  <mssgle:LineSegment
-                    End="235,62.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Invoice Headers Data Flow Task.Paths[OLE DB Source Output1]"
-          TopLeft="525.5,99">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-74.1666666666667,68"
-              Start="0,0"
-              End="-74.1666666666667,60.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,36.3150074294205" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,36.3150074294205"
-                    Point2="0,40.3150074294205"
-                    Point3="-4,40.3150074294205" />
-                  <mssgle:LineSegment
-                    End="-70.1666666666667,40.3150074294205" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-70.1666666666667,40.3150074294205"
-                    Point2="-74.1666666666667,40.3150074294205"
-                    Point3="-74.1666666666667,44.3150074294205" />
-                  <mssgle:LineSegment
-                    End="-74.1666666666667,60.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="159,42"
-          Id="Package\Invoice Headers Data Flow Task\Conditional Split"
-          TopLeft="394,328" />
-        <EdgeLayout
-          Id="Package\Invoice Headers Data Flow Task.Paths[Merge Join Output]"
-          TopLeft="430.5,209">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="43,119"
-              Start="0,0"
-              End="43,111.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,55.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,55.5"
-                    Point2="0,59.5"
-                    Point3="4,59.5" />
-                  <mssgle:LineSegment
-                    End="39,59.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="39,59.5"
-                    Point2="43,59.5"
-                    Point3="43,63.5" />
-                  <mssgle:LineSegment
-                    End="43,111.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="165,42"
-          Id="Package\Invoice Headers Data Flow Task\Delete Command"
-          TopLeft="729,407" />
-        <EdgeLayout
-          Id="Package\Invoice Headers Data Flow Task.Paths[DELETE]"
-          TopLeft="511.25,370">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="300.25,37"
-              Start="0,0"
-              End="300.25,29.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,8.74020618556701" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,8.74020618556701"
-                    Point2="0,12.740206185567"
-                    Point3="4,12.740206185567" />
-                  <mssgle:LineSegment
-                    End="296.25,12.740206185567" />
-                  <mssgle:CubicBezierSegment
-                    Point1="296.25,12.740206185567"
-                    Point2="300.25,12.740206185567"
-                    Point3="300.25,16.740206185567" />
-                  <mssgle:LineSegment
-                    End="300.25,29.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="132.44205078125,17.740206185567,35.3658984375,9.2705078125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="168,42"
-          Id="Package\Invoice Headers Data Flow Task\Update Command"
-          TopLeft="562,492" />
-        <EdgeLayout
-          Id="Package\Invoice Headers Data Flow Task.Paths[UPDATE]"
-          TopLeft="473.5,370">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="172.5,122"
-              Start="0,0"
-              End="172.5,114.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,57" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,57"
-                    Point2="0,61"
-                    Point3="4,61" />
-                  <mssgle:LineSegment
-                    End="168.5,61" />
-                  <mssgle:CubicBezierSegment
-                    Point1="168.5,61"
-                    Point2="172.5,61"
-                    Point3="172.5,65" />
-                  <mssgle:LineSegment
-                    End="172.5,114.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="67.58810546875,66,37.3237890625,9.421875"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="216,42"
-          Id="Package\Invoice Headers Data Flow Task\Invoice Headers Destination"
-          TopLeft="245,501" />
-        <EdgeLayout
-          Id="Package\Invoice Headers Data Flow Task.Paths[INSERT]"
-          TopLeft="435.75,370">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-82.75,131"
-              Start="0,0"
-              End="-82.75,123.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.1072164948454" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,41.1072164948454"
-                    Point2="0,45.1072164948454"
-                    Point3="-4,45.1072164948454" />
-                  <mssgle:LineSegment
-                    End="-78.75,45.1072164948454" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-78.75,45.1072164948454"
-                    Point2="-82.75,45.1072164948454"
-                    Point3="-82.75,49.1072164948454" />
-                  <mssgle:LineSegment
-                    End="-82.75,123.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-58.9653125,50.1072164948454,35.180625,9.5341796875"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Invoice Headers Data Flow Task\Invoice Headers Table Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Invoice Headers Data Flow Task\Invoice Headers View Source">
+    design-time-name="Package\Account Data Flow Task\Account View Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -8927,62 +8666,138 @@ ORDER BY h.InvoiceNo, CAST(HeaderSeqNo AS Int)</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="159,42"
-          Id="Package\Inventory Data Flow Task\Conditional Split"
-          TopLeft="389,391" />
-        <NodeLayout
-          Size="165,42"
-          Id="Package\Inventory Data Flow Task\Delete Command"
-          TopLeft="729,407" />
-        <NodeLayout
-          Size="193,42"
-          Id="Package\Inventory Data Flow Task\Inventory Table Source"
-          TopLeft="527,73" />
+          Size="182,42"
+          Id="Package\Inventory Data Flow Task\Inventory Destination"
+          TopLeft="245,501" />
         <NodeLayout
           Size="168,42"
           Id="Package\Inventory Data Flow Task\Update Command"
           TopLeft="565,513" />
         <NodeLayout
+          Size="165,42"
+          Id="Package\Inventory Data Flow Task\Delete Command"
+          TopLeft="729,407" />
+        <NodeLayout
           Size="189,42"
           Id="Package\Inventory Data Flow Task\Inventory View Source"
           TopLeft="219,78" />
         <NodeLayout
-          Size="182,42"
-          Id="Package\Inventory Data Flow Task\Inventory Destination"
-          TopLeft="245,501" />
+          Size="193,42"
+          Id="Package\Inventory Data Flow Task\Inventory Table Source"
+          TopLeft="527,73" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Inventory Data Flow Task\Merge Join"
+          TopLeft="385,221" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Inventory Data Flow Task\Conditional Split"
+          TopLeft="389,391" />
         <EdgeLayout
-          Id="Package\Inventory Data Flow Task.Paths[UPDATE]"
-          TopLeft="493.666666666667,433">
+          Id="Package\Inventory Data Flow Task.Paths[OLE DB Source Output1]"
+          TopLeft="623.5,115">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="155.333333333333,80"
+              EndConnector="-151.166666666667,106"
               Start="0,0"
-              End="155.333333333333,72.5">
+              End="-151.166666666667,98.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.4782067247821" />
+                    End="0,58.8439821693908" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,28.4782067247821"
-                    Point2="0,32.4782067247821"
-                    Point3="4,32.4782067247821" />
+                    Point1="0,58.8439821693908"
+                    Point2="0,62.8439821693908"
+                    Point3="-4,62.8439821693908" />
                   <mssgle:LineSegment
-                    End="151.333333333333,32.4782067247821" />
+                    End="-147.166666666667,62.8439821693908" />
                   <mssgle:CubicBezierSegment
-                    Point1="151.333333333333,32.4782067247821"
-                    Point2="155.333333333333,32.4782067247821"
-                    Point3="155.333333333333,36.4782067247821" />
+                    Point1="-147.166666666667,62.8439821693908"
+                    Point2="-151.166666666667,62.8439821693908"
+                    Point3="-151.166666666667,66.8439821693908" />
                   <mssgle:LineSegment
-                    End="155.333333333333,72.5" />
+                    End="-151.166666666667,98.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="59.0047721354167,37.4782067247821,37.3237890625,9.421875"
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Inventory Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="313.5,120">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="117.166666666667,101"
+              Start="0,0"
+              End="117.166666666667,93.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.8796433878157" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,55.8796433878157"
+                    Point2="0,59.8796433878157"
+                    Point3="4,59.8796433878157" />
+                  <mssgle:LineSegment
+                    End="113.166666666667,59.8796433878157" />
+                  <mssgle:CubicBezierSegment
+                    Point1="113.166666666667,59.8796433878157"
+                    Point2="117.166666666667,59.8796433878157"
+                    Point3="117.166666666667,63.8796433878157" />
+                  <mssgle:LineSegment
+                    End="117.166666666667,93.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Inventory Data Flow Task.Paths[Merge Join Output]"
+          TopLeft="451.5,263">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="17,128"
+              Start="0,0"
+              End="17,120.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,60" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,60"
+                    Point2="0,64"
+                    Point3="4,64" />
+                  <mssgle:LineSegment
+                    End="13,64" />
+                  <mssgle:CubicBezierSegment
+                    Point1="13,64"
+                    Point2="17,64"
+                    Point3="17,68" />
+                  <mssgle:LineSegment
+                    End="17,120.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -9058,117 +8873,47 @@ ORDER BY h.InvoiceNo, CAST(HeaderSeqNo AS Int)</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="133,42"
-          Id="Package\Inventory Data Flow Task\Merge Join"
-          TopLeft="385,221" />
         <EdgeLayout
-          Id="Package\Inventory Data Flow Task.Paths[OLE DB Source Output]"
-          TopLeft="313.5,120">
+          Id="Package\Inventory Data Flow Task.Paths[UPDATE]"
+          TopLeft="493.666666666667,433">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="117.166666666667,101"
+              EndConnector="155.333333333333,80"
               Start="0,0"
-              End="117.166666666667,93.5">
+              End="155.333333333333,72.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,55.8796433878157" />
+                    End="0,28.4782067247821" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,55.8796433878157"
-                    Point2="0,59.8796433878157"
-                    Point3="4,59.8796433878157" />
+                    Point1="0,28.4782067247821"
+                    Point2="0,32.4782067247821"
+                    Point3="4,32.4782067247821" />
                   <mssgle:LineSegment
-                    End="113.166666666667,59.8796433878157" />
+                    End="151.333333333333,32.4782067247821" />
                   <mssgle:CubicBezierSegment
-                    Point1="113.166666666667,59.8796433878157"
-                    Point2="117.166666666667,59.8796433878157"
-                    Point3="117.166666666667,63.8796433878157" />
+                    Point1="151.333333333333,32.4782067247821"
+                    Point2="155.333333333333,32.4782067247821"
+                    Point3="155.333333333333,36.4782067247821" />
                   <mssgle:LineSegment
-                    End="117.166666666667,93.5" />
+                    End="155.333333333333,72.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Inventory Data Flow Task.Paths[OLE DB Source Output1]"
-          TopLeft="623.5,115">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-151.166666666667,106"
-              Start="0,0"
-              End="-151.166666666667,98.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,58.8439821693908" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,58.8439821693908"
-                    Point2="0,62.8439821693908"
-                    Point3="-4,62.8439821693908" />
-                  <mssgle:LineSegment
-                    End="-147.166666666667,62.8439821693908" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-147.166666666667,62.8439821693908"
-                    Point2="-151.166666666667,62.8439821693908"
-                    Point3="-151.166666666667,66.8439821693908" />
-                  <mssgle:LineSegment
-                    End="-151.166666666667,98.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Inventory Data Flow Task.Paths[Merge Join Output]"
-          TopLeft="451.5,263">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="17,128"
-              Start="0,0"
-              End="17,120.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,60" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,60"
-                    Point2="0,64"
-                    Point3="4,64" />
-                  <mssgle:LineSegment
-                    End="13,64" />
-                  <mssgle:CubicBezierSegment
-                    Point1="13,64"
-                    Point2="17,64"
-                    Point3="17,68" />
-                  <mssgle:LineSegment
-                    End="17,120.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="59.0047721354167,37.4782067247821,37.3237890625,9.421875"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Inventory Data Flow Task\Inventory Table Source">
+    design-time-name="Package\Inventory Data Flow Task\Inventory Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -9189,7 +8934,7 @@ ORDER BY h.InvoiceNo, CAST(HeaderSeqNo AS Int)</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Inventory Data Flow Task\Inventory Destination">
+    design-time-name="Package\Inventory Data Flow Task\Inventory Table Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -9207,29 +8952,65 @@ ORDER BY h.InvoiceNo, CAST(HeaderSeqNo AS Int)</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="159,42"
-          Id="Package\Invoice Details Data Flow Task\Conditional Split"
-          TopLeft="394,328" />
+          Size="168,42"
+          Id="Package\Invoice Details Data Flow Task\Update Command"
+          TopLeft="562,492" />
         <NodeLayout
           Size="215,42"
           Id="Package\Invoice Details Data Flow Task\Invoice Details View Source"
           TopLeft="96,48" />
         <NodeLayout
-          Size="165,42"
-          Id="Package\Invoice Details Data Flow Task\Delete Command"
-          TopLeft="729,407" />
+          Size="209,42"
+          Id="Package\Invoice Details Data Flow Task\Invoice Details Destination"
+          TopLeft="245,501" />
         <NodeLayout
           Size="219,42"
           Id="Package\Invoice Details Data Flow Task\Invoice Details Table Source"
           TopLeft="429,52" />
         <NodeLayout
-          Size="168,42"
-          Id="Package\Invoice Details Data Flow Task\Update Command"
-          TopLeft="562,492" />
+          Size="165,42"
+          Id="Package\Invoice Details Data Flow Task\Delete Command"
+          TopLeft="729,407" />
         <NodeLayout
-          Size="209,42"
-          Id="Package\Invoice Details Data Flow Task\Invoice Details Destination"
-          TopLeft="245,501" />
+          Size="159,42"
+          Id="Package\Invoice Details Data Flow Task\Conditional Split"
+          TopLeft="394,328" />
+        <EdgeLayout
+          Id="Package\Invoice Details Data Flow Task.Paths[DELETE]"
+          TopLeft="511.25,370">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="300.25,37"
+              Start="0,0"
+              End="300.25,29.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.74020618556701" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.74020618556701"
+                    Point2="0,12.740206185567"
+                    Point3="4,12.740206185567" />
+                  <mssgle:LineSegment
+                    End="296.25,12.740206185567" />
+                  <mssgle:CubicBezierSegment
+                    Point1="296.25,12.740206185567"
+                    Point2="300.25,12.740206185567"
+                    Point3="300.25,16.740206185567" />
+                  <mssgle:LineSegment
+                    End="300.25,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="132.44205078125,17.740206185567,35.3658984375,9.2705078125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Invoice Details Data Flow Task.Paths[UPDATE]"
           TopLeft="473.5,370">
@@ -9302,8 +9083,364 @@ ORDER BY h.InvoiceNo, CAST(HeaderSeqNo AS Int)</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Invoice Details Data Flow Task\Merge Join"
+          TopLeft="370,168" />
         <EdgeLayout
-          Id="Package\Invoice Details Data Flow Task.Paths[DELETE]"
+          Id="Package\Invoice Details Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="203.5,90">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="233,78"
+              Start="0,0"
+              End="233,70.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35"
+                    Point2="0,39"
+                    Point3="4,39" />
+                  <mssgle:LineSegment
+                    End="229,39" />
+                  <mssgle:CubicBezierSegment
+                    Point1="229,39"
+                    Point2="233,39"
+                    Point3="233,43" />
+                  <mssgle:LineSegment
+                    End="233,70.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Invoice Details Data Flow Task.Paths[OLE DB Source Output1]"
+          TopLeft="538.5,94">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-81.1666666666667,74"
+              Start="0,0"
+              End="-81.1666666666667,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.8722139673105" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39.8722139673105"
+                    Point2="0,43.8722139673105"
+                    Point3="-4,43.8722139673105" />
+                  <mssgle:LineSegment
+                    End="-77.1666666666667,43.8722139673105" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-77.1666666666667,43.8722139673105"
+                    Point2="-81.1666666666667,43.8722139673105"
+                    Point3="-81.1666666666667,47.8722139673105" />
+                  <mssgle:LineSegment
+                    End="-81.1666666666667,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Invoice Details Data Flow Task.Paths[Merge Join Output]"
+          TopLeft="436.5,210">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="37,118"
+              Start="0,0"
+              End="37,110.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,55"
+                    Point2="0,59"
+                    Point3="4,59" />
+                  <mssgle:LineSegment
+                    End="33,59" />
+                  <mssgle:CubicBezierSegment
+                    Point1="33,59"
+                    Point2="37,59"
+                    Point3="37,63" />
+                  <mssgle:LineSegment
+                    End="37,110.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Invoice Details Data Flow Task\Invoice Details View Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Invoice Details Data Flow Task\Invoice Details Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Invoice Details Data Flow Task\Invoice Details Table Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Invoice Headers Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Invoice Headers Data Flow Task\Update Command"
+          TopLeft="562,492" />
+        <NodeLayout
+          Size="223,42"
+          Id="Package\Invoice Headers Data Flow Task\Invoice Headers View Source"
+          TopLeft="84,55" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Invoice Headers Data Flow Task\Merge Join"
+          TopLeft="364,167" />
+        <NodeLayout
+          Size="165,42"
+          Id="Package\Invoice Headers Data Flow Task\Delete Command"
+          TopLeft="729,407" />
+        <NodeLayout
+          Size="227,42"
+          Id="Package\Invoice Headers Data Flow Task\Invoice Headers Table Source"
+          TopLeft="412,57" />
+        <NodeLayout
+          Size="216,42"
+          Id="Package\Invoice Headers Data Flow Task\Invoice Headers Destination"
+          TopLeft="245,501" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Invoice Headers Data Flow Task\Conditional Split"
+          TopLeft="394,328" />
+        <EdgeLayout
+          Id="Package\Invoice Headers Data Flow Task.Paths[UPDATE]"
+          TopLeft="473.5,370">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="172.5,122"
+              Start="0,0"
+              End="172.5,114.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,57" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,57"
+                    Point2="0,61"
+                    Point3="4,61" />
+                  <mssgle:LineSegment
+                    End="168.5,61" />
+                  <mssgle:CubicBezierSegment
+                    Point1="168.5,61"
+                    Point2="172.5,61"
+                    Point3="172.5,65" />
+                  <mssgle:LineSegment
+                    End="172.5,114.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="67.58810546875,66,37.3237890625,9.421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Invoice Headers Data Flow Task.Paths[OLE DB Source Output1]"
+          TopLeft="525.5,99">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-74.1666666666667,68"
+              Start="0,0"
+              End="-74.1666666666667,60.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.3150074294205" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,36.3150074294205"
+                    Point2="0,40.3150074294205"
+                    Point3="-4,40.3150074294205" />
+                  <mssgle:LineSegment
+                    End="-70.1666666666667,40.3150074294205" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-70.1666666666667,40.3150074294205"
+                    Point2="-74.1666666666667,40.3150074294205"
+                    Point3="-74.1666666666667,44.3150074294205" />
+                  <mssgle:LineSegment
+                    End="-74.1666666666667,60.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Invoice Headers Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="195.5,97">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="235,70"
+              Start="0,0"
+              End="235,62.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31"
+                    Point2="0,35"
+                    Point3="4,35" />
+                  <mssgle:LineSegment
+                    End="231,35" />
+                  <mssgle:CubicBezierSegment
+                    Point1="231,35"
+                    Point2="235,35"
+                    Point3="235,39" />
+                  <mssgle:LineSegment
+                    End="235,62.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Invoice Headers Data Flow Task.Paths[Merge Join Output]"
+          TopLeft="430.5,209">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="43,119"
+              Start="0,0"
+              End="43,111.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,55.5"
+                    Point2="0,59.5"
+                    Point3="4,59.5" />
+                  <mssgle:LineSegment
+                    End="39,59.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="39,59.5"
+                    Point2="43,59.5"
+                    Point3="43,63.5" />
+                  <mssgle:LineSegment
+                    End="43,111.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Invoice Headers Data Flow Task.Paths[INSERT]"
+          TopLeft="435.75,370">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-82.75,131"
+              Start="0,0"
+              End="-82.75,123.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.1072164948454" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.1072164948454"
+                    Point2="0,45.1072164948454"
+                    Point3="-4,45.1072164948454" />
+                  <mssgle:LineSegment
+                    End="-78.75,45.1072164948454" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-78.75,45.1072164948454"
+                    Point2="-82.75,45.1072164948454"
+                    Point3="-82.75,49.1072164948454" />
+                  <mssgle:LineSegment
+                    End="-82.75,123.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-58.9653125,50.1072164948454,35.180625,9.5341796875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Invoice Headers Data Flow Task.Paths[DELETE]"
           TopLeft="511.25,370">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -9338,117 +9475,11 @@ ORDER BY h.InvoiceNo, CAST(HeaderSeqNo AS Int)</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="133,42"
-          Id="Package\Invoice Details Data Flow Task\Merge Join"
-          TopLeft="317,138" />
-        <EdgeLayout
-          Id="Package\Invoice Details Data Flow Task.Paths[OLE DB Source Output]"
-          TopLeft="203.5,90">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="180,48"
-              Start="0,0"
-              End="180,40.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20"
-                    Point2="0,24"
-                    Point3="4,24" />
-                  <mssgle:LineSegment
-                    End="176,24" />
-                  <mssgle:CubicBezierSegment
-                    Point1="176,24"
-                    Point2="180,24"
-                    Point3="180,28" />
-                  <mssgle:LineSegment
-                    End="180,40.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Invoice Details Data Flow Task.Paths[OLE DB Source Output1]"
-          TopLeft="538.5,94">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-134.166666666667,44"
-              Start="0,0"
-              End="-134.166666666667,36.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.0861812778603" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.0861812778603"
-                    Point2="0,26.0861812778603"
-                    Point3="-4,26.0861812778603" />
-                  <mssgle:LineSegment
-                    End="-130.166666666667,26.0861812778603" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-130.166666666667,26.0861812778603"
-                    Point2="-134.166666666667,26.0861812778603"
-                    Point3="-134.166666666667,30.0861812778603" />
-                  <mssgle:LineSegment
-                    End="-134.166666666667,36.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Invoice Details Data Flow Task.Paths[Merge Join Output]"
-          TopLeft="383.5,180">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="90,148"
-              Start="0,0"
-              End="90,140.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,70" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,70"
-                    Point2="0,74"
-                    Point3="4,74" />
-                  <mssgle:LineSegment
-                    End="86,74" />
-                  <mssgle:CubicBezierSegment
-                    Point1="86,74"
-                    Point2="90,74"
-                    Point3="90,78" />
-                  <mssgle:LineSegment
-                    End="90,140.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Invoice Details Data Flow Task\Invoice Details View Source">
+    design-time-name="Package\Invoice Headers Data Flow Task\Invoice Headers View Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -9456,20 +9487,7 @@ ORDER BY h.InvoiceNo, CAST(HeaderSeqNo AS Int)</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Invoice Details Data Flow Task\Invoice Details Table Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Invoice Details Data Flow Task\Invoice Details Destination">
+    design-time-name="Package\Invoice Headers Data Flow Task\Invoice Headers Table Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
